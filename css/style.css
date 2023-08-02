@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Oswald&display=swap");
+/* hide desktopUI */
+#desktopUItop, #desktopUIbottom, #desktopLogo {
+  display: none; }
+
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5%;
+  width: 100%; }
+
+/* Disable horizontal scroll on mobile */
+html {
+  overflow-x: hidden; }
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  font-family: "RO Sans", Oswald, "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000;
+}
+
+#controls {
+  background-color: #000000;
+  margin-top: 0.125%; }
+
+.square {
+  color: #fff;
+  float: left;
+  position: relative;
+  width: 19.75%;
+  padding-bottom: 19.75%;
+  margin: 0.125%;
+  background-color: #154273;
+  overflow: hidden; 
+}
+
+.squareContent {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  padding-left: 3.0px;
+  padding-right: 3.0px;}
+
+.pickedBG {
+  background-color: #C9005C;
+  transition: 0.2s; }
+
+.winningBG, #freeSquare {
+  color: #000000;
+  background-color: #d39e00;
+  transition: 0.2s; }
+
+#watermark {
+    position: absolute;
+    bottom: 0;
+}
+
+/* makes and keeps mobile UI buttons orange on click */
+.menu-button:active, .menu-button:hover {
+  background-color: #154273; }
+
+.blue{
+  background-color: #154273;
+}
+
+/* makes desktop ui buttons orange on click*/
+.blueHover:hover {
+  background-color: #154273; }
+
+/* xs rules */
+@media screen and (min-width: 0px) {
+  #watermark{
+    font-size: 2.5vw;
+  }
+  .squareContent {
+    font-size: 3.2vw; }
+  /* create space between card and bottomnav */
+  body {
+    padding-bottom: 30%; } }
+
+/* sm rules */
+@media screen and (min-width: 576px) {
+  #watermark{
+    font-size: 2.4vw;
+  }
+  .squareContent {
+    font-size: 2.7vw; }
+  /* create space between card and bottomnav */
+  body {
+    padding-bottom: 10%; } }
+
+/* md rules */
+@media screen and (min-width: 768px) {
+  #desktopUItop {
+    display: inline; }
+  #desktopUIbottom {
+    display: flex; }
+  #desktopLogo {
+    display: block; }
+  #mobileUI {
+    display: none; }
+    #watermark{
+      font-size: 1.5vw;
+    }
+  .squareContent {
+    font-size: 1.8vw; }
+  /* left margin needed to align it correctly with desktop info button*/
+  #cardName {
+    margin-left: 6%; }
+  /* remove space between card and bottomnav */
+  body {
+    padding-bottom: 0%; } }
+
+/* lg rules */
+@media screen and (min-width: 992px) {
+  #watermark{
+    font-size: 1.1vw;
+  }
+  .squareContent {
+    font-size: 1.3vw; } }
+
+/* xl rules */
+@media screen and (min-width: 1200px) {
+  #watermark{
+    font-size: 0.65vw;
+  }
+  .squareContent {
+    font-size: 0.75vw; } }
+
+/* xxl rules */
+@media screen and (min-width: 1400px) {
+  .squareContent {
+    font-size: 0.85vw; } }
