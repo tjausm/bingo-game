@@ -1,1 +1,1 @@
-"# Persco-Bingo" 
+Web application where users can play a bingo game based on the COVID press conferences of the Dutch Government. The website is hosted at [persco-bingo.nl](https://persco-bingo.nl/) and has received over 35,000 visitors.
